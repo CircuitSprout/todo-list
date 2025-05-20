@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="menu-container">
+        <h1 class="titleList">To-Do List</h1>
+        <menu class="menuExtra">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+        </ul>
+    </menu>
+</div>
+    <div class="main-layout"> 
+        <div class="left-column">
+            <div class="left-row" id="left-row-1">
+                <h2>Today</h2>
+                <section class="left-row">
+                <textarea id="leftRow1" rows="2" cols="25" placeholder="Type and press Enter"></textarea>
+                <ul id="leftRow1-list"></ul>
+                </section>
+            </div>
+            <div class="left-row" id="left-row-2">
+                <h2>Tomorrow</h2>
+                <section class="left-row">
+                <textarea id="leftRow2" rows="2" cols="25" placeholder="Type and press Enter"></textarea>
+                <ul id="leftRow2-list"></ul>
+                </section>
+            </div>
+            <div class="left-row" id="left-row-3">
+                <section class="left-row">
+                <h2>This Week</h2>
+                <textarea id="leftRow3" rows="2" cols="25" placeholder="Type and press Enter"></textarea>
+                <ul id="leftRow3-list"></ul>
+                </section>  
+            </div>
+        </div>
+        <!-- Right column -->
+        <div class="right-column">
+            <div class="notes-row">
+                <div>
+                    <h2>Inspo Thoughts</h2>
+                    <textarea id="inspoThoughts" name="inspoThoughts" rows="8" cols="30"></textarea>
+                </div>
+                <div>
+                    <h2>Small Musings</h2>
+                    <textarea id="smallMusings" name="smallMusings" rows="8" cols="30"></textarea>
+                </div>
+            </div>
+            <div class="week-blocks">
+                <div class="week-block">Sun
+                    <textarea id="weekBlock1" rows="4" cols="15"></textarea>
+                </div>
+                <div class="week-block">Mon
+                    <textarea id="weekBlock2" rows="4" cols="15"></textarea>
+                </div>
+                <div class="week-block">Tue
+                    <textarea id="weekBlock3" rows="4" cols="15"></textarea>
+                </div>
+                <div class="week-block">Wed
+                    <textarea id="weekBlock4" rows="4" cols="15"></textarea>
+                </div>
+                <div class="week-block">Thu
+                    <textarea id="weekBlock5" rows="4" cols="15"></textarea>
+                </div>
+                <div class="week-block">Fri
+                    <textarea id="weekBlock6" rows="4" cols="15"></textarea>
+                </div>
+                <div class="week-block">Sat
+                    <textarea id="weekBlock7" rows="4" cols="15"></textarea>
+                </div>
+                <div class="week-block">Notes
+                    <textarea id="weekBlock8" rows="4" cols="15"></textarea>
+                </div>
+                </div>
+    <!-- Bottom row: Grocery List and Assignments/Work Deadlines -->
+    <div class="bottom-row">
+        <div class="grocery-list">
+            <h2>🍎 Grocery List</h2>
+            <textarea id="groceryListDetails" rows="6" cols="40"></textarea>
+        </div>
+        <div class="assignments-list">
+            <h2>Assignments / Work Deadlines</h2>
+            <textarea id="workLoadDetails" rows="6" cols="40"></textarea>
+        </div>
+    </div>
+       <div class="footer">
+        <p>Made with ❤️ by Circuit Sprout</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,280 +1,285 @@
 /* === Base Styles === */
-html, body {
-    height: 100%;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffd698; /* Orange background */
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffd698; /* Orange background */
 }
 
 /* === Menu/Header === */
 .menu-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 16px 32px;
-    background: #fee9cf; /* Light background for menu/title */
-    border-bottom: 1px solid #c4aa00;
-    width: 100%;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 32px;
+  background: #fee9cf; /* Light background for menu/title */
+  border-bottom: 1px solid #c4aa00;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* === Title === */
-.titleList, h1 {
-    margin: 0;
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    letter-spacing: 1px;
-    background: none;
+.titleList,
+h1 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: none;
 }
 
 /* === Menu Button === */
 .menuExtra {
-    display: flex;
-    align-items: center;
-    background: none;
-    box-shadow: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 8px;
+  display: flex;
+  align-items: center;
+  background: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
 }
 .menuExtra ul {
-    display: flex;
-    gap: 24px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .menuExtra li {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .menuExtra a {
-    text-decoration: none;
-    color: #333;
-    font-family: 'Electrolize', sans-serif;
-    font-size: 1em;
-    font-weight: 600;
-    padding: 6px 12px;
-    border-radius: 4px;
-    transition: background 0.2s;
+  text-decoration: none;
+  color: #333;
+  font-family: "Electrolize", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
 }
 .menuExtra a:hover {
-    background: #ffefb0;
+  background: #ffefb0;
 }
 
 /* === Main Layout === */
 .main-layout {
-    display: flex;
-    align-items: flex-start;
-    gap: 32px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    clear: both;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  clear: both;
 }
 
 /* === Left Column (Task Lists) === */
 .left-column {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    background: #fffde7; /* Light background for li container */
-    max-width: 400px;
-    margin: 0 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fffde7; /* Light background for li container */
+  max-width: 400px;
+  margin: 0 20px 0 0;
 }
 .left-row {
-    padding: 16px;
-    border-bottom: 1px solid #c4aa00;
-    background: transparent; /* No background, let column show */
+  padding: 16px;
+  border-bottom: 1px solid #c4aa00;
+  background: transparent; /* No background, let column show */
 }
 .left-row:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 .left-column textarea {
-    background-color: transparent;
-    border: none;
-    resize: none;
-    width: 100%;
-    height: 70px;
-    font-family: 'Patrick Hand', cursive;
-    font-size: 1em;
-    color: #333;
-    outline: none;
-    padding: 0;
+  background-color: transparent;
+  border: none;
+  resize: none;
+  width: 100%;
+  height: 70px;
+  font-family: "Patrick Hand", cursive;
+  font-size: 1em;
+  color: #333;
+  outline: none;
+  padding: 0;
 }
 
 /* === Task List Items === */
 .task-lists ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    max-width: 45vw;
-    width: 100%;
-    box-sizing: border-box;
-    overflow-y: visible;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  max-width: 45vw;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: visible;
 }
 .task-lists li {
-    font-family: "Electrolize", sans-serif;
-    background-color: #ff8826;
-    border: 1px solid #fff700;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 0 2px 6px rgb(41, 48, 255);
+  font-family: "Electrolize", sans-serif;
+  background-color: #ff8826;
+  border: 1px solid #fff700;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgb(41, 48, 255);
 }
 .bullet-list {
-    margin-top: 10px;
-    padding-left: 20px;
+  margin-top: 10px;
+  padding-left: 20px;
 }
 .bullet-list li {
-    font-family: 'Electrolize', sans-serif;
-    margin-bottom: 4px;
+  font-family: "Electrolize", sans-serif;
+  margin-bottom: 4px;
 }
 
 /* === Right Column === */
 .right-column {
-    flex: 1 1 0;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    align-items: flex-start;
-    background: transparent; /* No background, let orange show */
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  align-items: flex-start;
+  background: transparent; /* No background, let orange show */
 }
 
 /* === Notes Row (Inspo Thoughts & Small Musings) === */
 .notes-row {
-    font-size: 0.8em;
-    font-family: 'Electrolize', sans-serif;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-bottom: 5%;
-    margin-left: 0;
-    max-width: 700px;
-    width: 100%;
+  font-size: 0.8em;
+  font-family: "Electrolize", sans-serif;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 5%;
+  margin-left: 0;
+  max-width: 700px;
+  width: 100%;
 }
 .notes-row > div {
-    flex: 1 1 0;
-    max-width: 350px;
+  flex: 1 1 0;
+  max-width: 350px;
 }
 .notes-row textarea {
-    background-color: transparent;
-    font-family: "Patrick Hand", cursive;
-    font-size: 1em;
+  background-color: transparent;
+  font-family: "Patrick Hand", cursive;
+  font-size: 1em;
 }
 
 /* === Inspo Thoughts & Small Musings Textareas === */
-#inspoThoughts, #smallMusings {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: rgb(255, 255, 152);
-    border: 1px solid #c4aa00;
-    box-shadow: 0 3px 9px rgb(112, 77, 32);
-    border-bottom-right-radius: 15px;
+#inspoThoughts,
+#smallMusings {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(255, 255, 152);
+  border: 1px solid #c4aa00;
+  box-shadow: 0 3px 9px rgb(112, 77, 32);
+  border-bottom-right-radius: 15px;
 }
 
 /* === Week Blocks (Calendar Row) === */
 .week-blocks {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin-left: 0;
-    max-width: 700px;
-    width: 100%;
-    align-self: flex-start;
-    padding: 5px;
-    box-sizing: border-box;
-    border: #95a5ff solid 1px;
-    border-radius: 5px;
-    background-color: #fff9e7; /* Light background for week blocks */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-left: 0;
+  max-width: 700px;
+  width: 100%;
+  align-self: flex-start;
+  padding: 5px;
+  box-sizing: border-box;
+  border: #95a5ff solid 1px;
+  border-radius: 5px;
+  background-color: #fff9e7; /* Light background for week blocks */
 }
 .week-block {
-    background: #e3eaff;
-    border: 1px solid #95a5ff;
-    border-radius: 4px;
-    height: 180px;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 10px;
-    font-family: 'Electrolize', sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-    box-shadow: 0 1px 4px rgba(104, 109, 255, 0.404);
-    position: relative;
-    width: 80%;
+  background: #e3eaff;
+  border: 1px solid #95a5ff;
+  border-radius: 4px;
+  height: 180px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+  font-family: "Electrolize", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  box-shadow: 0 1px 4px rgba(104, 109, 255, 0.404);
+  position: relative;
+  width: 80%;
 }
 .week-block textarea {
-    background-color: transparent;
-    border: none;
-    resize: none;
-    width: 100%;
-    height: 120px;
-    font-family: 'Patrick Hand', cursive;
-    font-size: 1em;
-    color: #333;
-    outline: none;
-    padding: 0;
-    margin-top: 8px;
-    box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  resize: none;
+  width: 100%;
+  height: 120px;
+  font-family: "Patrick Hand", cursive;
+  font-size: 1em;
+  color: #333;
+  outline: none;
+  padding: 0;
+  margin-top: 8px;
+  box-sizing: border-box;
 }
 
 /* === Bottom Row (Grocery List & Assignments) === */
 .bottom-row {
-    display: flex;
-    gap: 32px;
-    margin-top: 25px;
-    margin-left: 0;
-    max-width: 1200px;   /* Increased max-width */
-    width: 100%;
-    box-sizing: border-box;
+  display: flex;
+  gap: 32px;
+  margin-top: 25px;
+  margin-left: 0;
+  max-width: 1200px; /* Increased max-width */
+  width: 100%;
+  box-sizing: border-box;
 }
-.grocery-list, .assignments-list {
-    flex: 1 1 0;
-    background: #fffde7;
-    border: 1px solid #c4aa00;
-    border-radius: 8px;
-    padding: 24px;
-    box-sizing: border-box;
-    min-width: 0;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.grocery-list,
+.assignments-list {
+  flex: 1 1 0;
+  background: #fffde7;
+  border: 1px solid #c4aa00;
+  border-radius: 8px;
+  padding: 24px;
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .grocery-list textarea,
 .assignments-list textarea {
-    width: 100%;
-    min-height: 60px;    /* Makes it more rectangular */
-    background: transparent;
-    border: none;
-    font-family: 'Patrick Hand', cursive;
-    font-size: 1em;
-    resize: none;
-    outline: none;
-    color: #333;
-    margin-top: 10px;
-    box-sizing: border-box;
+  width: 100%;
+  min-height: 60px; /* Makes it more rectangular */
+  background: transparent;
+  border: none;
+  font-family: "Patrick Hand", cursive;
+  font-size: 1em;
+  resize: none;
+  outline: none;
+  color: #333;
+  margin-top: 10px;
+  box-sizing: border-box;
 }
 
 /* === Utility/Overrides === */
-h1, .titleList {
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    letter-spacing: 1px;
+h1,
+.titleList {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 h2 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    letter-spacing: 0.5px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
